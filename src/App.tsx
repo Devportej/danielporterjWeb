@@ -1,9 +1,12 @@
-import './App.css'
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route } from "react-router-dom";
+import "./styles.css";
 
 export default function App() {
-return (
-  <BrowserRouter>
-  </BrowserRouter>
-)
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Route path="/"/> 
+      </BrowserRouter>
+    </div>
+  );
 }
