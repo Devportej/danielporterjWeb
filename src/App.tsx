@@ -2,15 +2,20 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import './App.css';
 import Footer from "./components/Footer/Footer";
+import Home from "./Home/Home";
+import NotFound from "./NotFound/NotFound";
 
 export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <NavBar />
-        <Routes>
-          <Route path="/" />
-        </Routes>
+        <div className="body">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
         <Footer />
       </BrowserRouter>
     </div>
