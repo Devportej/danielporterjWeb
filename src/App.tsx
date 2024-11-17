@@ -5,7 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Home from "./Home/Home";
 import NotFound from "./NotFound/NotFound";
 
-export default function App() {
+const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
@@ -21,3 +21,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
