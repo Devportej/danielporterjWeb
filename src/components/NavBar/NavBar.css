@@ -1,0 +1,7 @@
+.navBar {
+    display: flex;
+    position: sticky;
+    width: 100%;
+    background-color: var(--secondary-color);
+    margin: 0;
+}
