@@ -4,4 +4,5 @@
     display: flex;
     position: fixed;
     bottom: 0;
+    min-height: 50px;
 }
