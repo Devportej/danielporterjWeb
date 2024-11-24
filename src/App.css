@@ -1,7 +1,6 @@
 :root {
   --background-color: #cee7e6;
-  --secondary-color: #036d19;
-  --font-color: #0b0014;
+  --secondary-color: #0b0014;
   --highlight-color: #fcaa67;
   --button-color: #3185fc;
 }
@@ -12,8 +11,9 @@
     font-weight: 700;
     text-decoration: underline;
     border: none;
+    color: white;
     &:hover {
-      color: yellow;
+      color: var(--highlight-color);
       cursor: pointer;
     }
   }

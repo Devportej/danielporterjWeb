@@ -5,8 +5,13 @@
   background-color: var(--secondary-color);
   margin: 0;
   min-height: 50px;
+  padding: 0px 50px;
 
   .link {
     margin: 0px 10px;
+  }
+
+  .link:first-of-type {
+    margin-left: 0px;
   }
 }

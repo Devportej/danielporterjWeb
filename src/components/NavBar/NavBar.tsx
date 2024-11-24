@@ -1,19 +1,23 @@
-import { useNavigate } from 'react-router-dom';
-import './NavBar.css';
+import { useNavigate } from "react-router-dom";
+import "./NavBar.css";
+import { goTo } from "../../utilities/funcs";
 
 const NavBar = () => {
-    const navigate = useNavigate();
+  const nav = useNavigate();
 
-    const goTo = (location: string) => {
-        navigate(location);
-    }
-
-    return (
-      <div className="navBar">
-        <button className="link" onClick={() => goTo("/")}>Home</button>
-        <button className="link" onClick={() => goTo("/projects")}>Projects</button>
-      </div>
-    );
-}
+  return (
+    <div className="navBar">
+      <button className="link" onClick={() => goTo({ location: "/", nav })}>
+        Home
+      </button>
+      <button
+        className="link"
+        onClick={() => goTo({ location: "/projects", nav })}
+      >
+        Projects
+      </button>
+    </div>
+  );
+};
 
 export default NavBar;
