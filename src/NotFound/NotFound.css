@@ -1,0 +1,10 @@
+.notFound{ 
+    h2 {
+        text-align: center;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+}

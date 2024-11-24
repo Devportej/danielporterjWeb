@@ -7,7 +7,7 @@ import NotFound from "./NotFound/NotFound";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="app">
       <BrowserRouter>
         <NavBar />
         <div className="body">
