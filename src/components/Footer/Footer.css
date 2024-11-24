@@ -16,4 +16,9 @@
         font-size: 15px;
     }
   }
+
+  .siteMap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

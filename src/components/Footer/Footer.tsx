@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { goTo } from "../../utilities/funcs";
 import "./Footer.css";
+import NLink from "../NLink/NLink";
 
 const Footer = () => {
   const nav = useNavigate();
@@ -8,19 +8,13 @@ const Footer = () => {
     <div className="footer">
       <img src="/portfolio_logo.jpg" alt="Website logo" height={"128px"} />
       <span className="socials">
-        <button
-          className="link"
-          onClick={() =>
-            goTo({
-              location: "https://www.linkedin.com/in/danielporterj/",
-              external: true,
-            })
-          }
-        >
-          LinkedIn
-        </button>
+        <NLink
+          location="https://www.linkedin.com/in/danielporterj/"
+          text="LinkedIn"
+          external={true}
+        />
       </span>
-      <span className="siteMap"></span>
+      <span className="siteMap">butt</span>
     </div>
   );
 };
