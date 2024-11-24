@@ -1,9 +1,22 @@
 :root {
-  --background-color: #CEE7E6;
-  --secondary-color: #036D19;
-  --font-color: #0B0014;
-  --highlight-color: #FCAA67;
-  --button-color: #3185FC;
+  --background-color: #cee7e6;
+  --secondary-color: #036d19;
+  --font-color: #0b0014;
+  --highlight-color: #fcaa67;
+  --button-color: #3185fc;
+}
+
+.app {
+  .link {
+    background-color: transparent;
+    font-weight: 700;
+    text-decoration: underline;
+    border: none;
+    &:hover {
+      color: yellow;
+      cursor: pointer;
+    }
+  }
 }
 
 body {
