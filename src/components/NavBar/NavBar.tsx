@@ -10,8 +10,8 @@ const NavBar = () => {
 
     return (
       <div className="navBar">
-        <button onClick={() => goTo("/")}>Home</button>
-        <button onClick={() => goTo("/projects")}>Projects</button>
+        <button className="link" onClick={() => goTo("/")}>Home</button>
+        <button className="link" onClick={() => goTo("/projects")}>Projects</button>
       </div>
     );
 }
