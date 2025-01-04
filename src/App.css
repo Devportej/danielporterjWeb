@@ -1,15 +1,15 @@
 :root {
-  --background-color: #cee7e6;
-  --secondary-color: #0b0014;
+  --background-color: #0b0014;
+  --secondary-color: #cee7e6;
   --highlight-color: #fcaa67;
   --button-color: #3185fc;
+  --font-color: #f0f0f0;
 }
 
 .app {
   .link {
     background-color: transparent;
     font-weight: 700;
-    text-decoration: underline;
     border: none;
     color: white;
     &:hover {

@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import "./NavBar.css";
-import { goTo } from "../../utilities/funcs";
 import NLink from "../NLink/NLink";
 
 const NavBar = () => {
