@@ -1,0 +1,9 @@
+.image-wrapper img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.image-center {
+  text-align: center;
+}

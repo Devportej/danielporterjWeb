@@ -6,19 +6,35 @@
   left: 0;
   right: 0;
   min-height: 50px;
-  padding: 50px;
+  padding: 32px 20px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   .socials {
     margin-left: 25px;
 
     .link {
-        font-size: 15px;
+      font-size: 15px;
     }
   }
 
   .siteMap {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: block;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer img {
+    margin: 0 auto 12px;
+  }
+  .footer .socials {
+    margin-left: 0;
   }
 }

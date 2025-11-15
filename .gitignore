@@ -12,9 +12,14 @@ dist
 dist-ssr
 *.local
 
+# Documentation (local reference only)
+DEPLOY_PI.md
+FINAL_SUMMARY.md
+nginx.conf.example
+build.yml
+
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
+.vscode
 .idea
 .DS_Store
 *.suo
@@ -22,3 +27,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment
+.env
+.env.local
+.env.*.local

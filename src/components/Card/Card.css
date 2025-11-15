@@ -1,8 +1,16 @@
 .card {
-    border: 3px solid var(--button-color);
-    background-color: var(--background-color);
-    border-radius: 10px;   
-    padding: 25px;
-    margin: 25px auto;
-    color: var(--font-color)
+  border: 3px solid var(--button-color);
+  background-color: var(--background-color);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 25px auto;
+  color: var(--font-color);
+  width: calc(100% - 40px);
+  max-width: 840px;
+}
+
+@media (min-width: 900px) {
+  .card {
+    padding: 32px;
+  }
 }
