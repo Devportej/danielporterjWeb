@@ -25,7 +25,22 @@ body {
 }
 
 .body {
-  width: 85vw;
-  margin: auto;
+  max-width: var(--max-width);
+  width: 95vw;
+  margin: 0 auto;
+  padding: 24px;
   min-height: 100vh;
+}
+
+/* utility container */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media (min-width: 900px) {
+  .body {
+    width: 90vw;
+  }
 }
