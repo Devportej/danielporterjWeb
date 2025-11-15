@@ -4,12 +4,14 @@
   top: 0;
   z-index: 40;
   width: 100%;
-  background-color: var(--background-color);
+  background-color: var(--surface-color);
   margin: 0;
-  min-height: 50px;
+  min-height: 56px;
   padding: 8px 20px;
   align-items: center;
   justify-content: center;
+  box-shadow: var(--shadow-sm);
+  border-bottom: 1px solid var(--border-color);
 
   .link {
     margin: 0px 10px;

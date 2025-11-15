@@ -3,27 +3,35 @@ import './NLink.css';
 import { goTo } from '../../utilities/funcs';
 
 type LinkProps =
-  | { location: string; text: string; nav: NavigateFunction; external?: never } // nav is required if external is not provided
-  | { location: string; text: string; nav?: never; external: boolean }; // external is required if nav is not provided
+  | { location: string; text: string; nav?: NavigateFunction; external?: false } // internal
+  | { location: string; text: string; external: true }; // external link
+
+const isExternal = (
+  p: LinkProps
+): p is { location: string; text: string; external: true } =>
+  'external' in p && (p as { external?: boolean }).external === true;
 
 const NLink = (props: LinkProps) => {
-  const { location, text, nav, external } = props;
-
-  if (external) {
+  if (isExternal(props)) {
     return (
       <a
         className="link"
-        href={location}
+        href={props.location}
         target="_blank"
         rel="noopener noreferrer"
       >
-        {text}
+        {props.text}
       </a>
     );
   }
 
+  const { location, text, nav } = props as {
+    location: string;
+    text: string;
+    nav?: NavigateFunction;
+  };
   return (
-    <button className="link" onClick={() => goTo({ location, nav, external })}>
+    <button className="link" onClick={() => goTo({ location, nav })}>
       {text}
     </button>
   );

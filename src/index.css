@@ -28,12 +28,26 @@ body {
   margin: 0;
   background-color: var(--background-color);
   color: var(--font-color);
-  line-height: 1.4;
+  line-height: 1.6;
+  transition: background-color 0.2s ease;
 }
 
 h1 {
   font-size: clamp(1.5rem, 2.2vw, 2.25rem);
+  font-weight: 700;
+  color: var(--font-color);
 }
 h2 {
   font-size: clamp(1.25rem, 1.8vw, 1.75rem);
+  font-weight: 600;
+  color: var(--font-color);
+}
+h3 {
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  font-weight: 600;
+  color: var(--font-color);
+}
+p {
+  color: var(--light-text);
+  line-height: 1.6;
 }

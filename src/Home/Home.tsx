@@ -1,25 +1,48 @@
-import { TypeAnimation } from 'react-type-animation';
 import Card from '../components/Card/Card';
-import './Home.css';
+import Image from '../components/Image/Image';
+import { useNavigate } from 'react-router-dom';
+import './home.css';
 
 const Home = () => {
+  const nav = useNavigate();
+
   return (
-    <main className="home">
-      <TypeAnimation
-        sequence={[
-          'Welcome to my website!',
-          1000,
-          'I am a developer.',
-          750,
-          'I am a designer.',
-          750,
-          'I am Daniel Porter',
-        ]}
-        wrapper="h1"
-        speed={50}
-      />
+    <main className="home container">
+      <section className="hero">
+        <div className="hero-left">
+          <h1>Daniel Porter</h1>
+          <h2>Software Developer — Web & Frontend Engineering</h2>
+          <p className="lead">
+            I build performant, accessible web apps with React and TypeScript. I
+            focus on clean UX, solid engineering, and production-ready
+            deployments.
+          </p>
+          <div className="hero-cta">
+            <button className="btn primary" onClick={() => nav('/projects')}>
+              View Projects
+            </button>
+            <a
+              className="btn outline"
+              href="/resume.pdf"
+              download="Daniel Porter - Resume.pdf"
+            >
+              Download Resume
+            </a>
+          </div>
+        </div>
+        <div className="hero-right">
+          <Image
+            src="/portfolio_logo.jpg"
+            alt="Daniel Porter logo"
+            width={360}
+            height={360}
+          />
+        </div>
+      </section>
+
       <Card>
-        <h2>Hello</h2>
+        <h2>Recent Work</h2>
+        <p>Placeholder for featured projects. Add project cards here.</p>
       </Card>
     </main>
   );

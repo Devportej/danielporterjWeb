@@ -1,16 +1,25 @@
 .card {
-  border: 3px solid var(--button-color);
-  background-color: var(--background-color);
-  border-radius: 10px;
-  padding: 25px;
-  margin: 25px auto;
+  border: none;
+  background-color: var(--surface-color);
+  border-radius: 12px;
+  padding: 32px;
+  margin: 24px auto;
   color: var(--font-color);
   width: calc(100% - 40px);
   max-width: 840px;
+  box-shadow: var(--shadow-md);
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
 }
 
 @media (min-width: 900px) {
   .card {
-    padding: 32px;
+    padding: 40px;
   }
 }
