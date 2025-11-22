@@ -1,7 +1,7 @@
 import Card from '../components/Card/Card';
 import Image from '../components/Image/Image';
 import { useNavigate } from 'react-router-dom';
-import './home.css';
+import './Home.css';
 
 const Home = () => {
   const nav = useNavigate();
