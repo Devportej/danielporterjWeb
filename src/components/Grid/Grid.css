@@ -1,0 +1,25 @@
+/* Basic grid reset and helpful defaults for Grid component */
+.grid {
+  display: grid;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Ensure children don't overflow their grid cells */
+.grid > * {
+  min-width: 0;
+}
+
+/* Small helper: center content inside a grid cell */
+.grid--center > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  /* Slightly tighter gaps on small screens if using CSS gap variables */
+  .grid {
+    gap: 12px;
+  }
+}

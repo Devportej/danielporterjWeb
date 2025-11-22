@@ -7,6 +7,7 @@ import { ROUTES } from './Routes';
 
 const Home = lazy(() => import('./Home/Home'));
 const About = lazy(() => import('./About/About'));
+const Projects = lazy(() => import('./Projects/Projects'));
 const Contact = lazy(() => import('./Contact/Contact'));
 const Resume = lazy(() => import('./Resume/Resume'));
 const NotFound = lazy(() => import('./NotFound/NotFound'));
@@ -21,6 +22,7 @@ const App = () => {
             <Routes>
               <Route path={ROUTES.HOME} element={<Home />} />
               <Route path={ROUTES.ABOUT} element={<About />} />
+              <Route path={ROUTES.PROJECTS} element={<Projects />} />
               <Route path={ROUTES.CONTACT} element={<Contact />} />
               <Route path={ROUTES.RESUME} element={<Resume />} />
               <Route path={ROUTES.NOT_FOUND} element={<NotFound />} />

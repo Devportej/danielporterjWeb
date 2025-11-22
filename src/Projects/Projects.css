@@ -1,0 +1,37 @@
+/* Projects page styles */
+.projects {
+  padding: 28px 16px;
+}
+
+.projects > h1 {
+  margin: 0 0 18px 0;
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+  color: var(--font-color);
+}
+
+/* Ensure grid children (cards) have consistent sizing and spacing */
+.projects .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 160px;
+}
+
+.projects .card h3 {
+  margin: 0 0 8px 0;
+}
+
+.projects .card p {
+  margin: 0;
+  color: var(--light-text);
+}
+
+.projects .card .link {
+  margin-top: 12px;
+}
+
+@media (min-width: 900px) {
+  .projects {
+    padding: 36px 24px;
+  }
+}
