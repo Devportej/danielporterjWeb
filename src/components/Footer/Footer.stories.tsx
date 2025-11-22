@@ -1,4 +1,3 @@
-import React from 'react';
 import Footer from './Footer';
 import { MemoryRouter } from 'react-router-dom';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import Grid from './Grid';
 import Card from '../Card/Card';
 
@@ -19,7 +18,7 @@ export const FixedColumns = () => (
 );
 
 export const ResponsiveAutoFit = () => (
-  <Grid rows={0} minColWidth={200} gap={16}>
+  <Grid rows={0} cols={0} minColWidth={200} gap={16}>
     {Array.from({ length: 8 }).map((_, i) => (
       <Card key={i}>{`Item ${i + 1}`}</Card>
     ))}
@@ -27,7 +26,7 @@ export const ResponsiveAutoFit = () => (
 );
 
 export const ResponsiveCapped = () => (
-  <Grid rows={0} minColWidth={200} maxCols={3} gap={16}>
+  <Grid rows={0} cols={0} minColWidth={200} maxCols={3} gap={16}>
     {Array.from({ length: 8 }).map((_, i) => (
       <Card key={i}>{`Item ${i + 1}`}</Card>
     ))}
