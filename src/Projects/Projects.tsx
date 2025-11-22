@@ -1,12 +1,15 @@
 import Card from '../components/Card/Card';
+import NLink from '../components/NLink/NLink';
 import './Projects.css';
 
 const Projects = () => {
   return (
     <main className="projects">
-      <h1>Welcome to Projects</h1>
       <Card>
-        <h2>Hello</h2>
+        <NLink location="./Calculator" text="Calculator" />
+        <NLink location="./GameOfLife" text="Game of Life" />
+        <NLink location="./Checkers" text="Checkers" />
+        <NLink location="./FWAG" text="Fish With a Gun" />
       </Card>
     </main>
   );
