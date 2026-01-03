@@ -3,8 +3,8 @@ import './Grid.css';
 
 type Props = {
   children: ReactNode;
-  /** Number of rows in the grid (can be 1) */
-  rows: number;
+  /** Number of rows in the grid (default: auto-generated) */
+  rows?: number;
   /** Number of columns in the grid (can be 1) */
   cols: number;
   /** Shorthand gap (e.g. "16px" or 16) applied to both row and column gaps */
@@ -54,7 +54,7 @@ const Grid: FC<Props> = ({
     gridTemplateColumns: cssMinCol
       ? `repeat(auto-fit, minmax(${cssMinCol}, 1fr))`
       : `repeat(${cols}, minmax(0, 1fr))`,
-    gridTemplateRows: `repeat(${rows}, auto)`,
+    ...(rows && rows > 0 ? { gridTemplateRows: `repeat(${rows}, auto)` } : {}),
     gap: toCssValue(
       rowGap === undefined && colGap === undefined ? gap : undefined
     ),

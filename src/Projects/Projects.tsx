@@ -29,7 +29,7 @@ const Projects = () => {
   return (
     <main className="projects container">
       <h1>Projects</h1>
-      <Grid rows={0} cols={1} minColWidth={260} maxCols={3} gap={20}>
+      <Grid cols={1} minColWidth={260} gap={20}>
         {projects.map((p) => (
           <Card key={p.id}>
             <h3>{p.title}</h3>
