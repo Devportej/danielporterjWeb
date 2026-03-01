@@ -1,56 +1,25 @@
 :root {
-  --background-color: #f8f9fa;
-  --surface-color: #ffffff;
-  --secondary-color: #6b7280;
-  --highlight-color: #2563eb;
-  --accent-color: #10b981;
-  --button-color: #2563eb;
-  --button-hover: #1d4ed8;
-  --font-color: #1f2937;
-  --light-text: #6b7280;
-  --border-color: #e5e7eb;
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
-
-.app {
-  .link {
-    background-color: transparent;
-    font-weight: 600;
-    border: none;
-    color: var(--font-color);
-    cursor: pointer;
-    transition: all 0.2s ease;
-    &:hover {
-      color: var(--highlight-color);
-    }
-  }
+  --background-color: #080808;
+  --surface-color: #111111;
+  --font-color: #eeeeee;
+  --display-font: 'DM Serif Display', serif;
+  --body-font: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --highlight-color: #f0b429;
+  --light-text: #777777;
+  --border-color: #1e1e1e;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.6);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.7);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.8);
 }
 
 body {
-  background: linear-gradient(135deg, #f8f9fa 0%, #f0f4f8 100%);
+  background: var(--background-color);
   color: var(--font-color);
-  background-attachment: fixed;
+  font-family: var(--body-font);
 }
 
-.body {
-  max-width: var(--max-width);
-  width: 95vw;
-  margin: 0 auto;
-  padding: 24px;
+.app {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-}
-
-/* utility container */
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-@media (min-width: 900px) {
-  .body {
-    width: 90vw;
-  }
 }

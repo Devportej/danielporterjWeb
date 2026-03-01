@@ -1,30 +1,29 @@
 import './Footer.css';
-import NLink from '../NLink/NLink';
-import Image from '../Image/Image';
 
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <Image
-        src="/portfolio_logo.jpg"
-        alt="Website logo"
-        width={128}
-        height={128}
-        loading="lazy"
-        className="image-center"
-      />
-      <span className="socials">
-        <NLink
-          location="https://www.linkedin.com/in/danielporterj/"
-          text="LinkedIn"
-          external={true}
-        />
-      </span>
-      <span className="siteMap">
-        © {new Date().getFullYear()} Daniel Porter
-      </span>
-    </footer>
-  );
-};
+const Footer = () => (
+  <footer className="footer">
+    <span className="footer__copy">
+      &copy; {new Date().getFullYear()} Daniel Porter
+    </span>
+    <div className="footer__links">
+      <a
+        className="footer__link"
+        href="https://www.linkedin.com/in/danielporterj/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+      <a
+        className="footer__link"
+        href="https://github.com/Devportej"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+    </div>
+  </footer>
+);
 
 export default Footer;
