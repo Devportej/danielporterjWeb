@@ -37,7 +37,7 @@
     "globals": "^15.14.0",
     "husky": "^8.0.0",
     "lint-staged": "^16.2.7",
-    "prettier": "^3.7.3",
+    "prettier": "^3.9.6",
     "react-router-dom": "^7.18.2",
     "react-type-animation": "^3.2.0",
     "rollup-plugin-visualizer": "^6.0.5",
