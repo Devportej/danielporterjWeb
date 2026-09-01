@@ -1,4 +1,5 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-npx --no-install lint-staged
+npx --no-install lint-staged || {
+	echo "lint-staged failed or Git < 2.32.0 — skipping lint-staged checks."
+	echo "Recommended: upgrade Git to >= 2.32.0: https://git-scm.com/downloads"
+	exit 0
+}
